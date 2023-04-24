@@ -42,23 +42,31 @@ h4 {
 .header_carbon_app .box:nth-of-type(2) {
   flex-grow:1;
 }
-.container_buttons_links_header_carbon_app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
+.btn {
+  display: inline-block;
+  padding: 9px 13px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: right;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #FF7B00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+  margin: 15px;
 }
-.container_buttons_links_header_carbon_app a:hover {
-  color: #466fa6;
+  
+.btn:hover {
+  background-color: #254762e5;
+  color: #EDF1D6;
 }
-.container_buttons_links_header_carbon_app btn {
-  width: 100px;
-  height: 100px;
-  background: #466fa6;
-  color: #fff;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+  
+.btn:active {
+  background-color: #254762;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 /* Section carbon_app_new_entry_main */
 .section_carbon_app_new_entry_main {
@@ -71,7 +79,7 @@ h4 {
 }
 .carbon_app_new_entry_main .box {
   flex: 1;
-  background: #568c63;
+  background: #254762;
   color: black;
   border-radius: 10px;
   margin: 20px 10px;
@@ -107,7 +115,7 @@ h4 {
   border-radius: 5px;
   text-decoration: none;
   font-size: 18px;
-  background-color: #568c63;
+  background-color: #84A8B3;
   border: 2px solid  #2a4359;
 }
 .btn_carbon_app_new_entry_main:hover {
@@ -210,6 +218,47 @@ h4 {
   text-align:left;
 }
 /*End container table_main*/
+
+/*Container two_emissions_graphs */
+.two_emissions_graphs {
+  display: flex;
+  background: #c5c8d9;
+  }  
+.two_emissions_graphs .container {
+  display: flex;
+  background: #c5c8d9;
+}
+.two_emissions_graphs .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.two_emissions_graphs .container .box {
+  flex: 1;
+  background: #c5c8d9;
+  border-radius: 2px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  text-align:center;
+}  
+.two_emissions_graphs .container  .box:nth-of-type(1) {
+  flex-grow:1;
+  background: #568c63;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  text-align:center;
+}  
+.two_emissions_graphs .container  .box:nth-of-type(2) {
+  flex-grow:1;
+  background: #568c63;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  text-align:center;
+}  
+/*End container two_emissions_graphs*/
+
 /*Container main menu */
 .main_menu {
   display: flex;
